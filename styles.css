@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #EE9999; */
+    background-image: linear-gradient(196deg, #f1a9a9, #e66767);
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.chair-img {
+    width: 500px;
+}
+
+.right-part {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 30%;
+}
+
+p {
+    font-weight: 900;
+    font-size: smaller;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 34px;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-weight: 400;
+    gap: 20px;
+
+}
+
+.sale-price {
+    font-size: 24px;
+}
+
+.discount-price {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.content-head {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.desc,
+.det {
+    cursor: pointer;
+}
+
+.content-body {
+    margin-top: 16px;
+}
+
+.color-heading {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.cart-button {
+    margin-top: 30px;
+    padding: 12px;
+    font-size: 16px;
+    width: 14em;
+    height: 3em;
+    color: white;
+    background-color: #944852;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 6px 15px 0 rgba(16, 39, 112, 0.15);
+    transition: all 250ms linear;
+}
+
+.cart-button:hover {
+    background-color: #333333;
+}
+
+
+.color-boxes {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+
+.color-image-box {
+    width: 40px;
+    border-radius: 10%;
+    box-shadow: 0 12px 35px 2px rgba(16, 39, 112, 0.25);
+    cursor: pointer;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    visibility: hidden;
+    position: absolute;
+}
+
+input {
+    display: none;
+}
+
+
+.colorBtn:checked+label {
+    border-color: #434343;
+    transform: scale(1.1);
+}
