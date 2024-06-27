@@ -22,7 +22,7 @@ body {
 .main {
     display: flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -186,7 +186,11 @@ h1 {
 
 .cart-button:hover {
     box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
-    background-color: #333333;  
+    background-color: #333333;
+}
+
+.forAnyColor:checked~.cart-button:hover {
+    background-color: #333333;
 }
 
 .forColor2:checked~.cart-button {
@@ -223,7 +227,7 @@ input {
 .colorBtn:checked+label,
 .colorBtn:not(:checked)+label {
     display: inline-block;
-    position:relative;
+    position: relative;
     height: 40px;
     margin-top: 20px;
     transition: all 200ms linear;
@@ -335,24 +339,28 @@ label.sixth-color {
 }
 
 @keyframes shake {
+
     10%,
     90% {
-      transform: translate3d(-1px, 0, 0) rotate(-1deg);
+        transform: translate3d(-1px, 0, 0) rotate(-1deg);
     }
+
     20%,
     80% {
-      transform: translate3d(2px, 0, 0) rotate(2deg);
+        transform: translate3d(2px, 0, 0) rotate(2deg);
     }
+
     30%,
     50%,
     70% {
-      transform: translate3d(-3px, 0, 0) rotate(-3deg);
+        transform: translate3d(-3px, 0, 0) rotate(-3deg);
     }
+
     40%,
     60% {
-      transform: translate3d(3px, 0, 0) rotate(3deg);
+        transform: translate3d(3px, 0, 0) rotate(3deg);
     }
-  }
+}
 
 .backColor {
     position: fixed;
